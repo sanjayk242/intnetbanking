@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" ignored="0" total="7" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="intnetbanking_project" duration-ms="91275" started-at="2020-08-30T17:30:48Z" finished-at="2020-08-30T17:32:19Z">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="91275" started-at="2020-08-30T17:30:48Z" finished-at="2020-08-30T17:32:19Z">
+      <class name="com.intnetbanking.testcases.TC_AddCustomer_003">
+        <test-method status="PASS" signature="Setup(java.lang.String)[pri:0, instance:com.intnetbanking.testcases.TC_AddCustomer_003@31a5c39e]" name="Setup" is-config="true" duration-ms="8813" started-at="2020-08-30T17:31:51Z" finished-at="2020-08-30T17:32:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="AddCustomer()[pri:0, instance:com.intnetbanking.testcases.TC_AddCustomer_003@31a5c39e]" name="AddCustomer" duration-ms="18487" started-at="2020-08-30T17:32:00Z" finished-at="2020-08-30T17:32:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddCustomer -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.intnetbanking.testcases.TC_AddCustomer_003@31a5c39e]" name="teardown" is-config="true" duration-ms="622" started-at="2020-08-30T17:32:18Z" finished-at="2020-08-30T17:32:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.intnetbanking.testcases.TC_AddCustomer_003 -->
+      <class name="com.intnetbanking.testcases.TC_logintest_001">
+        <test-method status="PASS" signature="Setup(java.lang.String)[pri:0, instance:com.intnetbanking.testcases.TC_logintest_001@e45f292]" name="Setup" is-config="true" duration-ms="9906" started-at="2020-08-30T17:30:48Z" finished-at="2020-08-30T17:30:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.intnetbanking.testcases.TC_logintest_001@e45f292]" name="loginTest" duration-ms="3106" started-at="2020-08-30T17:30:58Z" finished-at="2020-08-30T17:31:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.intnetbanking.testcases.TC_logintest_001@e45f292]" name="teardown" is-config="true" duration-ms="607" started-at="2020-08-30T17:31:01Z" finished-at="2020-08-30T17:31:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.intnetbanking.testcases.TC_logintest_001 -->
+      <class name="com.intnetbanking.testcases.TC_DDTLogintest_002">
+        <test-method status="PASS" signature="Setup(java.lang.String)[pri:0, instance:com.intnetbanking.testcases.TC_DDTLogintest_002@5f2108b5]" name="Setup" is-config="true" duration-ms="8849" started-at="2020-08-30T17:31:01Z" finished-at="2020-08-30T17:31:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.intnetbanking.testcases.TC_DDTLogintest_002@5f2108b5]" name="loginTest" duration-ms="12987" started-at="2020-08-30T17:31:12Z" data-provider="Excell" finished-at="2020-08-30T17:31:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr278184]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vUhYsan]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="FAIL" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.intnetbanking.testcases.TC_DDTLogintest_002@5f2108b5]" name="loginTest" duration-ms="6888" started-at="2020-08-30T17:31:25Z" data-provider="Excell" finished-at="2020-08-30T17:31:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[guru2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[343244]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at com.intnetbanking.testcases.TC_DDTLogintest_002.loginTest(TC_DDTLogintest_002.java:43)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="FAIL" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.intnetbanking.testcases.TC_DDTLogintest_002@5f2108b5]" name="loginTest" duration-ms="6083" started-at="2020-08-30T17:31:32Z" data-provider="Excell" finished-at="2020-08-30T17:31:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[guru3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[343245]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at com.intnetbanking.testcases.TC_DDTLogintest_002.loginTest(TC_DDTLogintest_002.java:43)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.intnetbanking.testcases.TC_DDTLogintest_002@5f2108b5]" name="loginTest" duration-ms="11874" started-at="2020-08-30T17:31:38Z" data-provider="Excell" finished-at="2020-08-30T17:31:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr278184]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vUhYsan]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="FAIL" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.intnetbanking.testcases.TC_DDTLogintest_002@5f2108b5]" name="loginTest" duration-ms="25" started-at="2020-08-30T17:31:50Z" data-provider="Excell" finished-at="2020-08-30T17:31:50Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+at com.intnetbanking.pageobject.loginpage.enteruserid(loginpage.java:16)
+at com.intnetbanking.testcases.TC_DDTLogintest_002.loginTest(TC_DDTLogintest_002.java:30)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.intnetbanking.testcases.TC_DDTLogintest_002@5f2108b5]" name="teardown" is-config="true" duration-ms="602" started-at="2020-08-30T17:31:50Z" finished-at="2020-08-30T17:31:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.intnetbanking.testcases.TC_DDTLogintest_002 -->
+    </test> <!-- Test1 -->
+  </suite> <!-- intnetbanking_project -->
+</testng-results>
